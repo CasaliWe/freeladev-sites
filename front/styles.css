@@ -1,0 +1,1128 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+:root{
+      --cor1: #FF4400;
+      --cor2: rgba(255, 68, 0, 0.671);
+}
+
+
+body, html{
+      overflow-x: hidden;
+}
+
+
+
+
+/*BARRA DE ROLAGEM*/
+::-webkit-scrollbar-thumb {
+background-color: var(--cor1);
+}
+::-webkit-scrollbar-thumb:hover {
+background-color: var(--cor2);
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 5px;
+}
+::-webkit-scrollbar {
+width: 4px;
+}
+::-webkit-scrollbar-track {
+background-color: rgba(255, 68, 0, 0.212);
+}
+
+
+::-moz-scrollbar-thumb {
+background-color: var(--cor1);
+}
+::-moz-scrollbar-thumb:hover {
+background-color: var(--cor2);
+}
+
+::-moz-scrollbar-thumb {
+border-radius: 5px;
+}
+::-moz-scrollbar {
+width: 4px;
+}
+::-moz-scrollbar-track {
+background-color: rgba(255, 68, 0, 0.212);
+}
+
+
+
+::-ms-scrollbar-thumb {
+background-color: var(--cor1);
+}
+::-ms-scrollbar-thumb:hover {
+background-color: var(--cor2);
+}
+
+::-ms-scrollbar-thumb {
+border-radius: 5px;
+}
+::-ms-scrollbar {
+width: 4px;
+}
+::-ms-scrollbar-track {
+background-color: rgba(255, 68, 0, 0.212);
+}
+/*BARRA DE ROLAGEM*/
+
+
+
+
+
+
+/*LOADER*/
+#loader div{
+    height: 30px;
+    width: 30px;
+    animation: animaLoader 600ms infinite;
+}
+#loader div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+@keyframes animaLoader {
+      from{transform: scale(1.0); opacity: .7;}
+      to{transform: scale(1.3); opacity: 1;}
+}
+/*LOADER*/
+
+
+
+
+
+
+/*BTN WPP*/
+#btn-wpp{
+      position: fixed;
+      right: 30px;
+      bottom: 20px;
+      width: 60px;
+      height: 60px;
+      z-index: 100000;
+ }
+ 
+ #btn-wpp img{
+       width: 100%;
+       transition: 300ms;
+ }
+ 
+ #btn-wpp img:hover{
+       cursor: pointer;
+       opacity: .5;
+       transition: 300ms;
+ }
+ /*BTN WPP*/
+
+
+
+
+
+
+
+
+#container{
+      overflow: hidden;
+      background-image: url("./img/bkg-port.jpg");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 100vh;
+}
+@media(min-width:1700px){
+      #container{
+            height: 60vh;
+      }
+}
+@media(max-width:992px){
+      #container{
+            height: 90vh;
+            overflow-y: hidden;
+      }
+}
+
+#start{
+      height: 100%;
+      padding-bottom: 50px;
+      background-color: rgba(0, 0, 0, 0.753);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-y: hidden !important;
+}
+
+
+
+
+
+/*HEADER*/
+header{
+      background-image: url('./img/bkg.jpg');
+      background-position: right center;
+      overflow: hidden;
+}
+
+._brand{
+      color: white;
+      font-size: 22px;
+      text-decoration: none;
+      transition: 500ms;
+}
+
+._brand:hover{
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.575);
+      transition: 500ms;
+}
+
+._brand span{
+      color: var(--cor1);
+}
+
+._brand img{
+      width: 35px;
+      margin-top: -6px;
+      margin-right: -6px;
+}
+
+
+._header-img-logo-top{
+      padding: 30px;
+}
+@media(max-width:992px){
+      ._header-img-logo-top{
+            padding: 28px;
+      }
+}
+
+
+
+
+
+
+
+/*CAROUSEL*/
+._carousel-item1 h1{
+      color: var(--cor1);
+      width: 50%;
+      font-size: 50px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+}
+
+@media (max-width:1400px){
+      ._carousel-item1 h1{
+            color: var(--cor1);
+            width: 60%;
+            font-size: 40px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+      }
+}
+
+._carousel-item1 p{
+      width: 40%;
+      margin: 0 auto;
+      font-size: 20px;
+      margin-bottom: 20px;
+}
+
+._carousel-item1 h5{
+      margin-bottom: 65px;
+}
+
+
+._carousel-item1 button{
+      font-size: 20px;
+      padding: 10px 25px;
+      border: 2px solid var(--cor1);
+      border-radius: 10px;
+      background-color: transparent;
+      color: white;
+      transition: 400ms;
+}
+
+._carousel-item1 button:hover{
+      background-color: rgba(255, 255, 255, 0.103);
+      box-shadow: 0px 0px 2px var(--cor1);
+      cursor: pointer;
+      transition: 400ms;
+}
+
+
+
+
+
+
+
+._carousel-item2 h1{
+      color: var(--cor1);
+      width: 50%;
+      font-size: 50px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+}
+
+@media (max-width:1400px){
+      ._carousel-item2 h1{
+            color: var(--cor1);
+            width: 50%;
+            font-size: 40px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+      }  
+}
+
+._carousel-item2 p{
+      width: 40%;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      font-size: 20px;
+}
+
+
+._carousel-item2 button{
+      font-size: 20px;
+      padding: 10px 25px;
+      border: 2px solid green;
+      border-radius: 10px;
+      background-color: transparent;
+      color: white;
+      transition: 400ms;
+}
+
+._carousel-item2 button:hover{
+      background-color: rgba(255, 255, 255, 0.103);
+      box-shadow: 0px 0px 2px green;
+      cursor: pointer;
+      transition: 400ms;
+}
+/*CAROUSEL*/
+
+
+
+
+
+
+
+
+
+/*INFO MAIN*/
+#info-main{
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+}
+
+#info-main h1{
+     color: var(--cor2);
+     font-size: 30px;
+     text-align: center;
+     width: 60%;
+     margin-bottom: 30px;
+}
+
+#info-main p{
+      width: 50%;
+      text-align: center;
+      color: black;
+}
+
+#info-main #info-cards{
+      width: 90%;
+      display: flex;
+      margin-top: 15px;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+}
+
+#info-main #info-cards i{
+      color: var(--cor2);
+}
+
+.cardss{
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.253);
+        border-radius: 10px;
+        margin: 15px;
+        padding: 10px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 330px;
+}
+
+
+.cardss h3{
+      font-size: 17px;
+      font-weight: bolder;
+      margin-bottom: 25px;
+}
+
+.cardss h6{
+      width: 70%;
+      font-weight: 100;
+      font-size: 15px;
+      text-align: start;
+      margin-bottom: 25px;
+}
+
+.cardss div{
+      width: 70%;
+}
+
+.cardss div h5{
+       font-size: 13px;
+       margin-bottom: 10px;
+}
+/*INFO MAIN*/
+
+
+
+
+
+
+
+
+
+
+/*POSICIONAR*/
+#orcamento{
+      height: 20vh;
+      color: white;
+      overflow: hidden;
+}
+
+#container-orcamento{
+        background-image: url('./img/bkg.jpg');
+        background-position: right center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow: hidden;
+}
+
+#container-orcamento div h1{
+         font-size: 22px;
+}
+
+#container-orcamento div h5{
+       font-size: 17px;
+       font-weight: 400;
+}
+
+#container-orcamento button{
+      font-size: 15px;
+      padding: 7px 15px;
+      border: 2px solid green;
+      border-radius: 10px;
+      background-color: transparent;
+      color: white;
+      transition: 400ms;
+      animation: animaBtn 400ms infinite;
+}
+
+#container-orcamento button:hover{
+      background-color: rgba(255, 255, 255, 0.103);
+      box-shadow: 0px 0px 2px green;
+      cursor: pointer;
+      transition: 400ms;
+}
+
+@keyframes animaBtn{
+         from{transform: scale(1);}
+         to{transform: scale(1.1);}
+}
+/*POSICIONAR*/
+
+
+
+
+
+
+
+/*PROJETOS EXEMPLOS*/
+#exemplos{
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden;
+}
+
+#exemplos #anima-txt{
+      color: var(--cor2);
+      font-size: 35px;
+      margin-bottom: 25px;
+      border-right: 2px solid black ;
+      white-space: nowrap;
+      overflow: hidden;
+}
+
+.digitar {
+      animation: pisca 300ms infinite normal, some 5s steps(20) infinite normal;
+}
+
+@keyframes pisca {
+      fron {border-right: 2px solid rgba(255, 255, 255, 0.623) ;}
+      to {border-right: 2px solid transparent ;}
+}
+
+@keyframes some {
+      0%{ width: 0px; }
+      35%{width: 397px;}
+      50%{width: 397px;}
+      70%{width: 397px;}
+      100%{width: 0px;}
+}
+
+
+
+#exemplos h5{
+      width: 60%;
+      font-size: 17px;
+      text-align: center;
+      margin-bottom: 15px;
+}
+
+#exemplos h5 span{
+       color: var(--cor2);
+       font-size: 20px;
+}
+
+#exemplos #carousell{
+      width: 90%;
+      padding: 10px;
+}
+
+#exemplos #carousell #container-imagem{
+      width: 45%;
+      height: 280px;
+}
+@media (min-width:1600px){
+      #exemplos #carousell #container-imagem{
+            width: 45%;
+            height: 380px;
+      }
+}
+#exemplos #carousell #container-imagem img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+}
+
+#exemplos #carousell img:hover{
+      animation: anima-img 4s infinite;
+      cursor: pointer;
+}
+
+@keyframes anima-img {
+        0%{transform: rotate(0deg);}
+        35%{transform: rotate(1deg);}
+        70%{transform: rotate(-1deg);}
+        100%{transform: rotate(0deg);}
+}
+
+
+.descri-exemplos1{
+         width: 50%;
+         padding: 20px;
+}
+
+.descri-exemplos2{
+        width: 50%;
+        padding: 20px;
+        text-align: right;
+}
+
+.descri-exemplos1 h3, .descri-exemplos2 h3{
+          color: var(--cor2);
+}
+
+.descri-exemplos1 p{
+        width: 50%;
+}
+
+.descri-exemplos2 p{
+      width: 50%;
+      margin-left: auto;
+}
+
+.descri-exemplos1 button, .descri-exemplos2 button{
+      background-color: var(--cor1);
+      color: white;
+      border: none;
+      padding: 3px 7px;
+      border-radius: 2px;
+      transition: 400ms;
+}
+
+.descri-exemplos1 button:hover, .descri-exemplos2 button:hover{
+       background-color: rgba(255, 0, 0, 0.5);
+       transition: 400ms;
+       cursor: pointer;
+}
+/*PROJETOS EXEMPLOS*/
+
+
+
+
+
+
+
+/*Quem Somos*/
+#quem-somos{
+        background-image: url('./img/bkg.jpg');
+        background-position: right center;
+        height: 40vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+}
+
+#quem-somos h1{
+      width: 50%;
+      font-size: 19px;
+      color: white;
+      text-align: center;
+      margin-bottom: 30px;
+}
+
+
+#quem-somos button{
+     color: white;
+     border: 1px solid var(--cor1);
+     background-color: transparent;
+     border-radius: 5px;
+     padding: 10px 15px;
+     transition: 300ms;
+     animation: animaBtn2 2s infinite;
+} 
+
+#quem-somos button:hover{
+      background-color: rgba(255, 255, 255, 0.219);
+      cursor: pointer;
+      transition: 300ms;
+} 
+
+@keyframes animaBtn2{
+          from{transform: scale(1);}
+          to{transform: scale(1.1);}
+}
+/*Quem Somos*/
+
+
+
+
+
+/*INSTAGRAM*/
+#instagram{
+        text-align: center;
+        padding: 20px 0px 10px 0px;
+        overflow: hidden;
+}
+
+#instagram a{
+      text-decoration: none;
+      color: var(--cor2);
+      transition: 400ms;
+}
+
+#instagram a:hover{
+      transition: 400ms;
+      color: var(--cor1);
+}
+/*INSTAGRAM*/
+
+
+
+
+
+
+
+/*PÁGINA DE CONTATO*/
+#form-container{
+     background-image: url('img/bkg-port.jpg');
+     background-position: center center;
+     background-size: cover;
+     color: white;
+     overflow: hidden;
+}
+
+#form-bg-dark{
+        background-color: rgba(0, 0, 0, 0.671);
+}
+
+
+#title-contato{
+      color: var(--cor1);
+      letter-spacing: -1px;
+      margin-top: 20px;
+      font-size: 35px;
+}
+
+
+#links-contato{
+    text-align: center;
+    padding-left: 160px;
+    padding-top: 30px;
+}
+
+#links-contato .contatos{
+    text-align: start;
+}
+
+#links-contato .contatos i{
+     color: var(--cor1);
+     font-size: 25px;
+}
+
+#links-contato .contatos i:hover{
+    color: var(--cor2);
+}
+
+#links-contato .contatos #icones-contato{
+      padding-left: 0px;
+}
+
+#links-contato .contatos #icones-contato i{
+    margin: 5px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+#form-contato{
+     padding: 10px;
+     display: flex;
+     flex-direction: column;
+}
+
+#form-contato input, textarea{
+     padding: 10px;
+     margin-bottom: 8px;
+     width: 80%;
+     border-radius: 5px;
+     font-size: 14px;
+     border: none;
+}
+
+#form-contato textarea{
+    font-size: 14px;
+}
+
+#form-contato button{
+    width: 35%;
+    margin-top: 10px;
+    background-color: var(--cor1);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: 400ms;
+    padding: 5px 15px;
+}
+
+#form-contato button:hover{
+    transition: 400ms;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.568);
+}
+/*PÁGINA DE CONTATO*/
+
+
+
+
+
+
+
+
+/*FOOTER*/
+#footer{
+       background-image: url('./img/bkg.jpg');
+       background-position: right center;
+       padding: 30px;
+       color: white;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+/*FOOTER*/
+
+
+
+
+
+
+/*---------------------------------------------RESPONSIVO-----------------------------------------*/
+@media (max-width: 992px){
+/*BTN WPP*/
+#btn-wpp{
+      position: fixed;
+      right: 25px;
+      bottom: 20px;
+      width: 40px;
+      z-index: 2000000;
+      height: 40px;
+}
+ 
+#btn-wpp img{
+       width: 100%;
+       transition: 300ms;
+}
+ 
+#btn-wpp img:hover{
+       cursor: pointer;
+       opacity: .5;
+       transition: 300ms;
+}
+/*BTN WPP*/
+
+
+
+
+/*Logo nav*/
+._brand{
+      font-size: 17px;
+}
+/*Logo nav*/
+
+
+
+
+
+
+
+/*carousel home inicio*/
+._carousel-item1 h1{
+      width: 80%;
+      font-size: 20px;
+}
+
+._carousel-item1 p{
+      width: 70%;
+      font-size: 17px;
+      margin-bottom: 15px;
+}
+
+._carousel-item1 h5{
+      margin: 0 auto;
+      margin-bottom: 65px;
+      margin-top: 25px;
+      width: 70%;
+      font-size: 18px;
+}
+
+
+._carousel-item1 button{
+      font-size: 18px;
+      padding: 5px 15px;
+}
+
+
+
+
+
+
+._carousel-item2 h1{
+      width: 80%;
+      font-size: 20px;
+}
+
+._carousel-item2 p{
+      width: 70%;
+      font-size: 16px;
+      margin-bottom: 45px;
+}
+
+
+._carousel-item2 button{
+      font-size: 18px;
+      padding: 5px 15px;
+}
+/*carousel home inicio*/
+
+
+
+
+
+
+
+/*INFO MAIN*/
+#info-main{
+      padding: 15px;
+}
+
+#info-main h1{
+   font-size: 20px;
+   text-align: center;
+   width: 90%;
+}
+
+#info-main p{
+    width: 90%;
+    text-align: center;
+    color: black;
+}
+
+#info-main #info-cards{
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.cardss{
+      padding: 30px 0px;
+      display: flex;
+      width: 100%;
+      height: auto;
+}
+
+
+.cardss h3{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.cardss h6{
+    font-size: 14px;
+}
+
+.cardss div h5{
+     font-size: 12px;
+}
+/*INFO MAIN*/
+
+
+
+
+
+
+/*Sessão orçamento*/
+#orcamento{
+      height: 25vh;
+}
+
+#container-orcamento{
+        flex-direction: column;
+        text-align: center;
+}
+
+#container-orcamento div h1{
+         font-size: 17px;
+}
+
+#container-orcamento div h5{
+       font-size: 15px;
+}
+
+#container-orcamento button{
+      font-size: 13px;
+}
+/*Sessão orçamento*/
+
+
+
+
+
+
+
+
+/*Exemplos*/
+#exemplos{
+      padding: 20px;
+}
+
+#exemplos #anima-txt{
+      font-size: 22px;
+}
+
+.digitar {
+      animation: pisca 300ms infinite normal, some 5s steps(20) infinite normal;
+}
+
+@keyframes some {
+      0%{ width: 0px; }
+      35%{width: 250px;}
+      50%{width:  250px;}
+      70%{width:  250px;}
+      100%{width: 0px;}
+}
+
+
+
+#exemplos h5{
+      width: 80%;
+      font-size: 15px;
+}
+
+#exemplos h5 span{
+       font-size: 16px;
+}
+
+#exemplos #carousell{
+      width: 100%;
+      padding: 0px;
+}
+
+#exemplos #carousell #container-imagem{
+      width: 100%;
+      height: 200px;
+}
+
+.descri-exemplos1{
+         width: 100%;
+         text-align: center;
+         margin-bottom: 40px;
+}
+
+.descri-exemplos2{
+        width: 100%;
+        text-align: center;
+}
+
+.descri-exemplos1 p{
+        width: 100%;
+}
+
+.descri-exemplos2 p{
+      width: 100%;
+}
+/*Exemplos*/
+
+
+
+
+
+
+
+
+/*Quem Somos*/
+#quem-somos{
+      height: 35vh;
+}
+
+#quem-somos h1{
+    width: 90%;
+    font-size: 18px;
+}
+
+
+#quem-somos button{
+   font-size: 15px;
+} 
+/*Quem Somos*/
+
+
+
+
+
+/*PÁGINA DE CONTATO*/
+#container #start{
+      overflow-y: auto;
+}
+
+#title-contato{
+      font-size: 25px;
+}
+
+
+#links-contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#links-contato .contatos{
+    text-align: center;
+}
+
+#links-contato .contatos #icones-contato{
+      padding-left: 0px;
+}
+
+
+
+
+
+#form-contato{
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+
+#form-contato input, textarea{
+     padding: 10px;
+     margin-bottom: 15px;
+     width: 100%;
+     border-radius: 5px;
+     font-size: 15px;
+}
+
+#form-contato textarea{
+    font-size: 15px;
+}
+
+#form-contato button{
+    width: 60%;
+    margin-top: 20px;
+    padding: 10px 15px;
+}
+/*PÁGINA DE CONTATO*/
+
+
+
+
+
+
+
+/*FOOTER*/
+#footer{
+       padding: 20px;
+}
+
+#logo-footer{
+     display: none;
+}
+#txt-footer{
+       position: absolute;
+       text-align: center;
+}
+/*FOOTER*/
+
+
+
+
+
+
+}
