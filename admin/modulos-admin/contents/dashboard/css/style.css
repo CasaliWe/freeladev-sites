@@ -1,0 +1,9 @@
+._btn-salvar{
+    width: 30%;
+}
+
+@media(max-width:992px){
+    ._btn-salvar{
+        width: 100%;
+    }
+}

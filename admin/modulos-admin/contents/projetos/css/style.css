@@ -1,0 +1,26 @@
+._container-img-projeto{
+    width: 100%;
+    height: 60px;
+}
+._container-img-projeto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media(min-width:1500px) {
+    ._container-img-projeto{
+        width: 80%;
+        height: 80px;
+    }
+}
+
+@media(max-width:992px) {
+    #container-projetos{
+        overflow-x: scroll;
+    }
+    #container-projetos-filho{
+        width: 1000px !important;
+    }
+}

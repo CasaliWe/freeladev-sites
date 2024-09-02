@@ -1,0 +1,126 @@
+#navegacao-desktop{
+    width: 20%;
+}
+
+#footer-nav{
+    position: absolute;
+    bottom: 7%;
+    padding-left: 11%;
+}
+#footer-nav h6{
+    font-size: 10px;
+}
+#footer-nav img{
+    width: 28%;
+}
+@media(min-width:1500px){
+    #footer-nav{
+        position: absolute;
+        bottom: 6%;
+        padding-left: 12%;
+    }
+    #footer-nav h6{
+        font-size: 14px;
+    }
+    #footer-nav img{
+        width: 35%;
+    }
+}
+@media(max-width:992px){
+    #footer-nav{
+        position: absolute;
+        bottom: 6%;
+        padding-left: 18%;
+        width: 100%;
+    }
+    #footer-nav h6{
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    #footer-nav img{
+        width: 17%;
+    }
+}
+
+.link-nav-desktop{
+    width: 100%;
+    padding-left: 12%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.767);
+    font-weight: 600;
+}
+.link-nav-desktop:hover{
+    background-color: rgba(128, 128, 128, 0.443);
+    color: black;
+}
+@media(max-width:992px){
+    .link-nav-desktop{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 12px;
+    }
+}
+
+.active-link-desktop{
+     background-color: gray !important;
+     color: white !important;
+}
+
+
+@media(min-width:1500px){
+    .link-nav-desktop{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 15px;
+    }
+}
+
+
+
+#header-navegacao-mobile{
+    display: none !important;
+}
+#content-navegacao-mobile{
+    display: none !important;
+}
+
+
+@media(max-width:992px){
+    #navegacao-desktop{
+        display: none !important;
+    }
+
+    #header-navegacao-mobile{
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 40px;
+    }
+    #header-navegacao-mobile #logo-nav-mobile{
+        height: 50px;
+    }
+
+
+    #content-navegacao-mobile{
+        position: fixed;
+        height: 0%;
+        width: 100%;
+        z-index: 1000 !important;
+        background-color: #DFDFDF;
+        display: flex !important;
+        justify-content: center;
+        align-items: start;
+        overflow: hidden !important;
+    }
+    #content-navegacao-mobile #btn-close{
+        position: fixed;
+        top: 4%;
+        right: 9%;
+        background-color: transparent;
+        border: none; 
+        cursor: pointer;
+        display: none;
+    }
+}

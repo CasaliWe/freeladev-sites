@@ -1,0 +1,47 @@
+.container-banner{
+    width: 100%;
+}
+@media(max-width:992px){
+    .container-banner{
+        width: 800px !important;
+    }
+}
+
+
+
+.container-desktop-banner{
+    width: 70%;
+    height: 60px;
+}
+.container-desktop-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container-mobile-banner{
+    width: 30%;
+    height: 60px;
+}
+.container-mobile-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.btn-edit-banner{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media(min-width:1500px){
+    .container-desktop-banner{
+        width: 50%;
+        height: 60px;
+    }
+}
