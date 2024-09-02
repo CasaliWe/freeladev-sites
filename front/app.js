@@ -1,4 +1,4 @@
-const baseUrl = 'https://back.freeladevsites.com.br'
+const baseUrl = 'https://back.freeladev.site'
 
 
 
@@ -74,7 +74,7 @@ async function inserirDados(){
 
                         <p>${projeto.descricao}</p>
 
-                        <button onclick="window.location.href='${projeto.link}'">Ver site</button>
+                        <button class="px-5 py-2" onclick="window.location.href='${projeto.link}'">Ver site</button>
                     </div>
                 </div>
             `
@@ -89,7 +89,7 @@ async function inserirDados(){
 
                         <p>${projeto.descricao}</p>
 
-                        <button onclick="window.location.href='${projeto.link}'">Ver site</button>
+                        <button class="px-5 py-2" onclick="window.location.href='${projeto.link}'">Ver site</button>
                     </div>
                     <div id="container-imagem" class="d-none d-lg-block"><img src="${baseUrl}/projetos/${projeto.imgName}" class="shadow-lg border rounded"></div>
                 </div>
