@@ -78,8 +78,8 @@ try {
 
     $mail->send();
 
-    header('Location: ../../index.html');
+    header('Location: ../../index.php');
 
 } catch (Exception $e) {
-    header('Location: ../../index.html');
+    header('Location: ../../index.php');
 }
