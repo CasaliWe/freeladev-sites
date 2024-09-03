@@ -20,7 +20,7 @@
                     <div class="row">
                         <div class="align-self-center fs-4 col-1"><?= $key +1; ?>-</div>
                         <div class="align-self-center small col-3 text-truncate"><?= $projeto['titulo']; ?></div>
-                        <div class="align-self-center small col-4"><?= $projeto['descricao']; ?></div>
+                        <div class="align-self-center small col-4 text-truncate"><?= $projeto['descricao']; ?></div>
                         <div class="align-self-center col-2"> <div class="_container-img-projeto"> <img src="<?= $base_url ?>assets/imagens/arquivos/projetos/<?= $projeto['imagem']; ?>" alt="<?= $projeto['titulo']; ?>"> </div> </div>
                         <div class="align-self-center justify-content-end col-2 d-flex">
                             <i onclick="abrirModalEditar('<?= $projeto['id']; ?>', '<?= $projeto['titulo']; ?>', '<?= $projeto['descricao']; ?>', '<?= $projeto['link']; ?>', '<?= $base_url ?>assets/imagens/arquivos/projetos/<?= $projeto['imagem']; ?>')" class="fas fs-5 me-2 fa-edit"></i>
