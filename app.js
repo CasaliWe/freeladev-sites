@@ -56,6 +56,8 @@ async function inserirDados(){
     document.getElementById("instagram-contato").href = infos.contatos.instagram
     document.getElementById("linkedin-contato").href = infos.contatos.linkedin
     document.getElementById("facebook-contato").href = infos.contatos.facebook
+    document.getElementById("container").style.cssText = `background-image: url('${baseUrl}/admin/assets/imagens/arquivos/banners/${infos.banner.banner_home_desktop}');`
+    document.getElementById("form-container").style.cssText = `background-image: url('${baseUrl}/admin/assets/imagens/arquivos/banners/${infos.banner.banner_home_desktop}');`
 
 
     var pai = document.getElementById('container-projetos')

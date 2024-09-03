@@ -134,7 +134,7 @@ background-color: rgba(255, 68, 0, 0.212);
 
 #container{
       overflow: hidden;
-      background-image: url("./img/bkg-port.jpg");
+      /* background-image: url("./img/bkg-port.jpg"); */
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
@@ -673,7 +673,7 @@ header{
 
 /*PÁGINA DE CONTATO*/
 #form-container{
-     background-image: url('img/bkg-port.jpg');
+     /* background-image: url('img/bkg-port.jpg'); */
      background-position: center center;
      background-size: cover;
      color: white;
