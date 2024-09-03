@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="./img/favicon/thumb-admin.jpg">
+    <meta property="og:image" content="https://freeladevsites.com.br/img/favicon/thumb-admin.jpg">
     <meta property="og:image:width" content="310">
     <meta property="og:image:height" content="310">
     <meta property="og:url" content="https://freeladevsites.com.br">
