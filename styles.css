@@ -554,12 +554,12 @@ header{
 
 .descri-exemplos1{
          width: 50%;
-         padding: 20px;
+         padding: 0px 20px;
 }
 
 .descri-exemplos2{
         width: 50%;
-        padding: 20px;
+        padding: 0px 20px;
         text-align: right;
 }
 
